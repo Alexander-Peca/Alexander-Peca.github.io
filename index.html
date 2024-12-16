@@ -36,10 +36,43 @@
         section {
             width: 80%;
             margin: 2rem auto;
+            padding: 1rem;
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
 
-        h2 {
+        section h2 {
             color: #2c3e50; /* Dark blue heading */
+            margin-bottom: 1rem;
+        }
+
+        /* Bio Section */
+        .bio {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .bio img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+        }
+
+        .bio-details {
+            flex: 1;
+        }
+
+        /* Projects Section */
+        .projects ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .projects li {
+            margin-bottom: 1rem;
         }
 
         h3 {
@@ -62,6 +95,7 @@
             color: #fff;
             text-align: center;
             padding: 1rem 0;
+            margin-top: 2rem;
         }
 
         footer a {
@@ -76,8 +110,25 @@
         <p>Hi! I'm Alexander, a Data Scientist passionate about solving real-world problems with data.</p>
     </header>
     
-    <!-- Projects Section -->
+    <!-- About Me Section -->
     <section>
+        <h2>About Me</h2>
+        <div class="bio">
+            <img src="your-photo-url.jpg" alt="Alexander Perez Carmona's Photo">
+            <div class="bio-details">
+                <p>Hi, I'm Alexander Perez Carmona, a Data Scientist with a background in market research and data analysis. I love building machine learning models to derive insights and solve complex problems.</p>
+                <p>Contact me at: <a href="mailto:alexander.percar@gmail.com">alexander.percar@gmail.com</a></p>
+                <p>Connect with me:</p>
+                <ul>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/dr-alexander-p-11730214/" target="_blank">dr-alexander-p</a></li>
+                    <li>GitHub: <a href="https://github.com/Alexander-Peca" target="_blank">Alexander-Peca</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
         <h2>Projects</h2>
         <ul>
             <li>
@@ -95,11 +146,10 @@
 
     <!-- Footer -->
     <footer>
-        <p>Contact me at: <a href="mailto:alexander.percar@gmail.com">alexander.percar@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/dr-alexander-p-11730214/" target="_blank">dr-alexander-p</a></p>
-        <p>GitHub: <a href="https://github.com/Alexander-Peca" target="_blank">Alexander-Peca</a></p>
+        <p>Portfolio by Alexander Perez Carmona</p>
     </footer>
 </body>
 </html>
+
 
 
