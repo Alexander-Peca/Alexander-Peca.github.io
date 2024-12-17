@@ -72,7 +72,17 @@
         }
 
         .projects li {
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 2rem;
+        }
+
+        .projects img {
+            display: block;
+            margin: 1rem auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
         }
 
         h3 {
@@ -87,6 +97,11 @@
 
         a:hover {
             text-decoration: underline;
+        }
+
+        .view-link {
+            text-align: center;
+            margin-top: 1rem;
         }
 
         /* Footer Styling */
@@ -131,16 +146,34 @@
     <section class="projects">
         <h2>Projects</h2>
         <ul>
+            <!-- Customer Churn Prediction -->
             <li>
                 <h3>Customer Churn Prediction</h3>
-                <p>This project focused on predicting customer churn using machine learning. Starting with thorough EDA, class imbalances were addressed through SMOTE and stratified sampling. Three models—LightGBM, XGBoost, and KNN—were evaluated. LightGBM emerged as the top performer with nearly perfect precision, recall, and accuracy, making it the final choice for refinement. The model was fine-tuned using GridSearchCV, and SHAP values provided insights into feature importance, identifying Age, Estimated Salary, and Customer Complaints as key factors driving churn. The results provide actionable insights for businesses to identify at-risk customers and develop targeted retention strategies</p>
+                <p>
+                    This project focused on predicting customer churn using machine learning. Starting with thorough EDA, class imbalances were addressed through SMOTE and stratified sampling. 
+                    Three models—LightGBM, XGBoost, and KNN—were evaluated. LightGBM emerged as the top performer with nearly perfect precision, recall, and accuracy, making it the final choice for refinement. 
+                    The model was fine-tuned using GridSearchCV, and SHAP values provided insights into feature importance, identifying Age, Estimated Salary, and Customer Complaints as key factors driving churn. 
+                    The results provide actionable insights for businesses to identify at-risk customers and develop targeted retention strategies.
+                </p>
                 <img src="images/Shap_XG_Co2project.png" alt="Feature importance via Shap values">
-                <a href="https://github.com/Alexander-Peca/customer_churn_Dec24" target="_blank">View Project</a>
+                <div class="view-link">
+                    <a href="https://github.com/Alexander-Peca/customer_churn_Dec24" target="_blank">View Project</a>
+                </div>
             </li>
+
+            <!-- CO2 Emissions Analysis -->
             <li>
                 <h3>CO2 Emissions Analysis</h3>
-                <p>This project utilized machine learning to support the automotive industry's goal of achieving 0 g CO₂/km for passenger cars and vans by 2035, as set by the EU. The dataset, provided by the European Environment Agency, contains CO₂ emissions data for newly registered cars across 30 countries (2010–2023). Initially over 16 GB, the data was streamlined through transformation and consolidation. Five machine learning models were evaluated to predict CO₂ emissions, with Linear Regression (base model), XGBoost, and Dense Neural Networks advancing to the final stage. XGBoost demonstrated the best performance, achieving the lowest MSE, highest R-squared, and strong robustness, all within a reasonable training time.</p>
-                <a href="https://github.com/Alexander-Peca/co2_eu_emissions_Sep24" target="_blank">View Project</a>
+                <p>
+                    This project utilized machine learning to support the automotive industry's goal of achieving 0 g CO₂/km for passenger cars and vans by 2035, as set by the EU. 
+                    The dataset, provided by the European Environment Agency, contains CO₂ emissions data for newly registered cars across 30 countries (2010–2023). 
+                    Initially over 16 GB, the data was streamlined through transformation and consolidation. Five machine learning models were evaluated to predict CO₂ emissions, 
+                    with Linear Regression (base model), XGBoost, and Dense Neural Networks advancing to the final stage. XGBoost demonstrated the best performance, achieving 
+                    the lowest MSE, highest R-squared, and strong robustness, all within a reasonable training time.
+                </p>
+                <div class="view-link">
+                    <a href="https://github.com/Alexander-Peca/co2_eu_emissions_Sep24" target="_blank">View Project</a>
+                </div>
             </li>
         </ul>
     </section>
@@ -151,6 +184,7 @@
     </footer>
 </body>
 </html>
+
 
 
 
