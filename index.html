@@ -152,6 +152,25 @@
     <section class="projects">
         <h2>Projects</h2>
         <ul>
+
+            <!-- Employee Attrition -->
+            <li>
+                <h3>Employee Attrition Prediction in the IT sector</h3>
+                <p>
+                    This project focuses on predicting employee attrition in the IT sector using machine learning. A synthetic dataset was designed to replicate real-world IT industry dynamics, 
+                    including responses to the Gallup Q12+ engagement questions, along with demographic and workplace metrics like age, tenure, salary, gender, and remote work percentages. 
+                    These variables were thoughtfully distributed based on research.
+                    Logistic Regression was selected as the final model for its strong balance between interpretability and performance, achieving a recall of 90%. SHAP analysis revealed that 
+                    Q11 (whether an employee has received meaningful feedback about their progress in the past six months) plays a critical role in predicting attrition. Employees receiving such feedback 
+                    were significantly less likely to leave. Key Insight: Regular, meaningful feedback sessions represent a cost-effective and impactful strategy for HR teams to enhance employee satisfaction 
+                    and reduce turnover.                           
+                </p>
+                <img src="images/frog_attrition.JPG" alt="Feature importance via Shap values">
+                <div class="view-link">
+                    <a href="https://github.com/Alexander-Peca/employee_attrition_Dec24" target="_blank">View Project</a>
+                </div>
+            </li>
+            
             <!-- Customer Churn Prediction -->
             <li>
                 <h3>Customer Churn Prediction</h3>
@@ -177,7 +196,7 @@
                     with Linear Regression (base model), XGBoost, and Dense Neural Networks advancing to the final stage. XGBoost demonstrated the best performance, achieving 
                     the lowest MSE, highest R-squared, and strong robustness, all within a reasonable training time.
                 </p>
-                <img src="images/Shap_XG_Co2project.JPG" alt="Feature importance via Shap values">
+                <img src="images/co2_emissions.JPG" alt="Feature importance via Shap values">
                 <div class="view-link">
                     <a href="https://github.com/Alexander-Peca/co2_eu_emissions_Sep24" target="_blank">View Project</a>
                 </div>
